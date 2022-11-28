@@ -1,28 +1,22 @@
 #include <stdio.h>
 #include <stdlib.h>
  
-// Define uma constante
 #define MAX 10
  
-// Protótipo da função de ordenação
 void shell_sort(int *a, int size);
  
-// Função main
 int main(int argc, char** argv)
 {
  int i, vet[MAX];
  
- // Lê MAX ou 10 valores
  for(i = 0; i < MAX; i++)
  {
   printf("Digite um valor: ");
   scanf("%d", &vet[i]);
  }
  
- // Ordena os valores
  shell_sort(vet, MAX);
  
- // Imprime os valores ordenados
  printf("Valores ordenados \n");
  for(i = 0; i < MAX; i++)
  {
@@ -32,7 +26,6 @@ int main(int argc, char** argv)
  return 0;
 }
  
-// Função de ordenação Shell
 void shell_sort(int *a, int size)
 {
  int i , j , value;
